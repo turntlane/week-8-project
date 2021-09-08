@@ -1,5 +1,14 @@
-const ApiKey = config.myAPIKey
-const timeKey = config.timeAPIKey
+let ApiKey;
+let timeKey;
+
+axios.get('/api/config' ).then(res => {
+    ApiKey = res.data.apiOne
+    timeKey = res.data.apiTwo
+
+})
+
+
+
 const weatherDegrees = document.getElementById('degrees')
 const button = document.getElementById('submit-button')
 const cityInput = document.getElementById('city-input')
