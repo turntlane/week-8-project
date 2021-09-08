@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#get-weather {
+    text-align: center;
+}
+
+.outter-container {
+    border-radius: 2%;
+    width: 40vw;
+    height: 60vh;
+    background-color: rgba(26, 26, 26, 0.584);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-container {
+    border-radius: 2%;
+    width: 40vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.584);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-container {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+}
+
+
+.city-input {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding-left: 5%;
+    width: 10rem;
+    height: 1.5rem;
+    outline: none;
+    background-color: rgba(63, 63, 63, 0.776);
+}
+
+.new-input {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding-left: .5%;
+    width: 10rem;
+    height: 1.5rem;
+    outline: none;
+    background-color: rgba(63, 63, 63, 0.776);
+}
+
+.city-input::placeholder {
+    color: white;
+}
+
+.submit {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 2rem;
+    height: 1.5rem;
+    outline: none;
+    background-color: rgba(63, 63, 63, 0.776);
+}
+
+.submit:hover {
+    opacity: .5;
+}
+
+
+
