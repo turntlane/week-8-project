@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 
 app.use('/js', express.static(path.join(__dirname, '/index.js')))
 
-app.use('/config', express.static(path.join(__dirname, '/config.js')))
 
 app.use('/css', express.static(path.join(__dirname, '/style.css')))
 
