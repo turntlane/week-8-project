@@ -33,7 +33,7 @@ button.addEventListener('submit', (e) => {
     cityName.innerText = res.data.name
     skys.innerText = res.data.weather[0].description
     weatherDegrees.innerText = Math.round(res.data.main.temp) + `°F`
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + cityInput.value + " city')"
+    document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+ cityInput.value +"')"
     cityInput.value = ''
 })
 axios.get('https://timezone.abstractapi.com/v1/current_time/?api_key=' + timeKey + '&location=' + cityInput.value)
